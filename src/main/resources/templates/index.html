@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- jquery -->
+    <script type="text/jscript" src="jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap -->
+    <link type="text/css" rel="stylesheet" href="boostrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="boostrap/js/bootstrap.min.js"></script>
+    <title>支付宝支付测试</title>
+</head>
+<body>
+<div style="margin:10px 30px;">
+    <form class="form-inline" action="/pay" target="_blank" >
+        <div class="form-group">
+            <label class="sr-only" for="inputAmount">金额 (人民币)</label>
+            <div class="input-group">
+                <div class="input-group-addon">¥</div>
+                <input type="text" class="form-control" id="inputAmount" name="totalAccount" placeholder="请输入金额">
+                <div class="input-group-addon">.00</div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">支付</button>
+    </form>
+</div>
+</body>
+</html>
